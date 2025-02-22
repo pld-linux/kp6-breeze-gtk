@@ -7,7 +7,7 @@
 Summary:	Artwork, styles and assets for the Breeze visual style for the Plasma Desktop
 Name:		kp6-%{kpname}
 Version:	6.3.1
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
@@ -52,8 +52,7 @@ Requires:	gtk-update-icon-cache
 Requires:	hicolor-icon-theme
 Obsoletes:	kp5-%{kpname} < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_debugsource_packages	0
+BuildArch:	noarch
 
 %description
 Artwork, styles and assets for the Breeze visual style for the Plasma
