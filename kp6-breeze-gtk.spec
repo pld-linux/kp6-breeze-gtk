@@ -51,37 +51,12 @@ BuildRequires:	xz
 Requires:	gtk-update-icon-cache
 Requires:	hicolor-icon-theme
 Obsoletes:	kp5-%{kpname} < 6
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Artwork, styles and assets for the Breeze visual style for the Plasma
 Desktop.
-
-%package -n %{kpname}-icon-theme
-Summary:	Breeze icon theme
-Summary(pl.UTF-8):	Breeze Motyw ikon
-Group:		Themes
-Requires:	gtk-update-icon-cache
-Requires:	hicolor-icon-theme
-Conflicts:	kp6-breeze < 5.4.0-5
-BuildArch:	noarch
-
-%description -n %{kpname}-icon-theme
-Breeze is an icon theme.
-
-%description -n %{kpname}-icon-theme -l pl.UTF-8
-Breeze to motyw ikon.
-
-%package -n %{kpname}-cursor-theme
-Summary:	Breeze cursor theme
-Group:		Themes
-Conflicts:	breeze-icon-theme < 5.4.0-7
-Conflicts:	kp6-breeze < 5.4.0-5
-BuildArch:	noarch
-
-%description -n %{kpname}-cursor-theme
-Breeze cursor theme.
 
 %prep
 %setup -q -n %{kpname}-%{version}
