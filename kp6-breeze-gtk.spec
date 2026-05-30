@@ -58,6 +58,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Artwork, styles and assets for the Breeze visual style for the Plasma
 Desktop.
 
+%description -l pl.UTF-8
+Grafika, style i zasoby dla stylu Breeze środowiska Plasma Desktop.
+
 %prep
 %setup -q -n %{kpname}-%{version}
 
